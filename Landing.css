@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300, 400,500,600,700,800');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.header {
+    display: grid;
+    grid-template-columns: 10% 10%;
+    grid-template-areas: " ... icon ... store-time phone-number ... call-to-action ...";
+    background-color: #f9f8f4
+}
+
+#icon {
+    grid-area: icon;
+}
+
+#store-time {
+    grid-area: store-time;
+}
+
+#phone-number {
+    grid-area: phone-number;
+}
+
+#call-to-action {
+    grid-area: call-to-action;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 100%;
+    width: auto;
+}
+
+.logo-wrapper {
+    height: 20vh;
+}
+
+.time-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: ".. .." "clock time" "clock open-at" ".. .."
+}
+
+.clock {
+    grid-area: clock;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    align-items: center;
+}
+
+.time {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: baseline;
+    grid-area: time;
+    color: #5a5f61;
+    font-weight: 500;
+    font-size: .86em;
+}
+
+.open-at {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+    grid-area: open-at;
+    font-weight: 600;
+    font-size: 1em;
+    color: #2e3233;
+}
+
+.make-an-appointment {
+    width: 211px;
+    height: 44px;
+    color: white;
+    background-color: #c45d3c;
+    border-radius: 4px;
+    border: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    transition: 1s background-color;
+    cursor: pointer;
+    outline: none;
+}
+
+.make-an-appointment:hover {
+    transition: 1s background-color;
+    background-color: #bf512d;
+}
+
+.make-an-appointment:active {
+    box-shadow: rgba(0, 0, 0, .25) 1px 3px 5px 1px inset;
+}
+
+.navigation {
+    background-color: #446a73;
+    color: #acc4ca;
+    line-height: 18px;
+    font-weight: 700;
+    font-size: 18px;
+    display: grid;
+    grid-template-areas: "... home about repair contact ... ... ";
+    height: 8vh;
+    position: sticky;
+    top: 0;
+
+}
+
+.home,
+.about,
+.repair,
+.contact {
+    transition: 1s background-color;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #375b63;
+    cursor: pointer;
+}
+
+.home:hover,
+.about:hover,
+.repair:hover,
+.contact:hover{
+    transition: 1s background-color;
+
+    color: #ffffff;
+    background-color: #375b63
+}
+
+.home {
+    grid-area: home;
+}
+
+.about {
+    grid-area: about;
+}
+
+.repair {
+    grid-area: repair;
+}
+
+.contact {
+    grid-area: contact;
+    border-right: 1px solid #375b63;
+}
+.landing-page-image-wrapper{
+    height: 60vh;
+    color: white;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('/assets/slider-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: grid;
+    grid-template-areas: 
+    "..."
+    "header"
+    "text"
+    "button"
+    "..."
+    ;
+    padding-left: 5vw;
+
+
+   
+}
+
+.landing-page-image-header{
+    grid-area: header;
+    font-size: 48px;
+    line-height: 62px;
+    letter-spacing: -1px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+.landing-page-image-text{
+    display: flex;
+    
+    grid-area: text
+}
+
+.landing-page-image-button-wrapper{
+    grid-area: button;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.landing-page-image-button{
+    
+    width: 155px;
+    height: 44px;
+    background-color: #ba451f;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+    
+}
+.landing-page-image-button:active{
+    box-shadow: rgba(0, 0, 0, .25) 1px 3px 5px 1px inset;
+
+}
+
+.getting-started-container{
+    padding: 80px 0px;
+    margin: auto;
+}
+.getting-started-header{
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: -1px;
+    font-weight: 500;
+    color: #2e3233;
+
+}
+
+
+.getting-started-text{
+    width: 80vw;
+    margin: auto;
+    color: #5a5f61;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 27px;
+    text-align: center;
+    margin-bottom: 60px;
+
+}
+
+.card-service-wrapper{
+    display: grid;
+    grid-gap: 28px;
+    grid-template-areas: ".. card1 card2 card3 card4 .."
+}
+
+#card{
+    background-color: #f9f8f4;
+    padding: 40px;
+    width: 190px;
+    height: 302px;
+    
+}
+
+
+
+.card1{
+    grid-area: card1
+}
+
+.card1:hover .card-title{
+    transition: 1s color;
+
+    color: #c45d3c;
+}
+
+.card2:hover .card-title{
+    transition: 1s color;
+
+    color: #c45d3c;
+}
+
+.card3:hover .card-title{
+    transition: 1s color;
+
+    color: #c45d3c;
+}
+
+.card4:hover .card-title{
+    transition: 1s color;
+
+    color: #c45d3c;
+}
+
+
+ .card-pricing:hover{
+    transition: 1s color;
+
+    color: #446a73;
+    text-decoration: none;
+}
+
+
+
+
+
+.card2{
+    grid-area: card2
+}
+.card3{
+    grid-area: card3
+}
+.card4{
+    grid-area: card4
+ }
+
+
+ .card-title{
+    transition: 1s color;
+    font-weight: 500;
+     font-size: 19px;
+     line-height: 28px;
+     text-align: start;
+     color: #2e3233;
+     margin-bottom: 10px;
+ }
+
+ .card-text{
+     font-size: 16px;
+     line-height: 27px;
+     color: #5a5f61;
+     font-weight: 300;
+     padding: 10px 10px 10px 0px;
+ }
+
+ .card-pricing{
+     align-items: baseline;
+     font-size: 14px;
+     line-height: 26px;
+     font-weight: 600;
+     text-decoration: #c45d3c solid underline;
+     color: #c45d3c;
+     cursor: pointer;
+     transition: 1s color;
+
+    }
+
+
+    .getting-started-footer{
+        padding-top: 80px;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .getting-started-footer-title{
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .getting-started-footer-text{
+        
+    }

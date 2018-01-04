@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/Landing.css" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fix My Dumb PC</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.6.7/angular-route.min.js"></script>
+    <script src="app.js"></script>
+
+</head>
+<!-- header <a href="#!">Link</a> -->
+
+<body class="test">
+    <header class="header">
+        <div id="icon">
+            <div class="logo-wrapper">
+                <img class="logo" src="./assets/File png.png" alt="fix my dumb pc">
+            </div>
+        </div>
+        <div class="time-grid" id="store-time">
+            <div class="clock">
+                <img src="./assets/clock.svg" alt="clock">
+            </div>
+            <h2 class="time">
+                STORE TIME
+            </h2>
+            <h1 class="open-at">8AM - 6PM</h1>
+        </div>
+        <div class="time-grid" id="phone-number">
+            <div class="clock">
+                <img src="./assets/phone.svg" alt="clock">
+            </div>
+
+            <h2 class="time">
+                NEED HELP?
+            </h2>
+            <h1 class="open-at">719-299-0811</h1>
+        </div>
+        <div id="call-to-action"> <a href="#!/contact-us"> <button class="make-an-appointment">MAKE AN APPOINTMENT</button></a></div>
+    </header>
+    <div class=" navigation">
+        <div class = "home">Home</div>
+        <div class = "about">About</div>
+        <div class = "repair" >Repair Services</div>
+        <div class = "contact">Contact</div>
+    </div>
+    <div ng-view></div>
+</body>
+
+</html>
