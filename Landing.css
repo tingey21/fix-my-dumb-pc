@@ -354,15 +354,20 @@ body{
     .getting-started-footer{
         padding-top: 80px;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         
     }
 
     .getting-started-footer-title{
         font-size: 22px;
         line-height: 28px;
+        color: #2e3233;
+
     }
 
     .getting-started-footer-text{
-        
+        color: #5a5f61;
+        font-size: 16px;
+        line-height: 27px;
     }
+
