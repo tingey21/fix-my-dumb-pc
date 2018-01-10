@@ -1,4 +1,24 @@
-<h1>This is main</h1>
-<hr />
+<div class="landing-page-image-wrapper" ng-app="myApp">
+    <h1 class="landing-page-image-header">
+        Contact Us    
+    </h1>
+        
+</div>
 
-<input type="text" ng-model="name">
+<div ng-controller= "mainController">
+        <form name="myForm">
+                <label>
+                   User name:
+                   <input type="text" name="userName" ng-model="user.name" required>
+                </label>
+                
+                <label>
+                   Last name:
+                   <input type="text" name="lastName" ng-model="user.last"
+                   ng-minlength="3" ng-maxlength="10">
+                </label>
+                
+                
+            </form>
+            <button ng-click="go()"></button>
+</div>

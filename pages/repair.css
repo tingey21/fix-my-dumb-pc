@@ -1,0 +1,110 @@
+.repair-card-wrapper{
+    display: grid;
+    grid-template-areas: 
+    " repair1 repair2 repair6"
+    " repair3 repair4 repair5"
+   ;
+    margin: auto;
+    grid-gap: 10px;
+}
+
+#repair1{
+    grid-area: repair1
+}
+#repair2{
+    grid-area: repair2
+}
+#repair3{
+    grid-area: repair3
+}
+#repair4{
+    grid-area: repair4
+}
+#repair5{
+    grid-area: repair5
+}
+
+#repair5{
+    grid-area: repair6
+}
+
+
+#repair1:hover .repair-title{
+    transition: 1s color;
+
+    color: #c45d3c;
+}
+
+#repair2:hover .repair-title{
+    transition: 1s color;
+
+    color: #c45d3c;
+}
+
+#repair3:hover .repair-title{
+    transition: 1s color;
+
+    color: #c45d3c;
+}
+
+#repair4:hover .repair-title{
+    transition: 1s color;
+
+    color: #c45d3c;
+}
+
+#repair5:hover .repair-title{
+    transition: 1s color;
+
+    color: #c45d3c;
+}
+
+#repair6:hover .repair-title{
+    transition: 1s color;
+
+    color: #c45d3c;
+}
+
+
+
+ 
+
+
+.repair-card{
+    height: 80%;
+    padding: 30px;
+    text-align: center;
+    width: 20vw;
+    border: 1px #9ea0a1 solid;
+    border-radius: 4px;
+    margin: auto;
+
+}
+.rapair-image-container{
+
+    margin: auto;
+    margin-bottom: 20px;
+}
+.repair-image{
+    height: auto;
+    width: 100%;
+}
+.repair-title{
+    transition: 1s color;
+    font-weight: 500;
+     font-size: 19px;
+     line-height: 28px;
+     color: #2e3233;
+     margin-bottom: 10px;
+}
+
+
+.repair-text{
+    font-size: 16px;
+    line-height: 27px;
+    color: #5a5f61;
+    margin-bottom: 30px;
+}
+.repair-link{
+
+}

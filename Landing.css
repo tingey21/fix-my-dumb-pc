@@ -156,7 +156,7 @@ body{
 .landing-page-image-wrapper{
     height: 60vh;
     color: white;
-    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('/assets/slider-1.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('/assets/motherboard.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -256,14 +256,13 @@ body{
 .card-service-wrapper{
     display: grid;
     grid-gap: 28px;
-    grid-template-areas: ".. card1 card2 card3 card4 .."
+    grid-template-areas: "..  card1 card2 card3 card4 .."
 }
 
 #card{
     background-color: #f9f8f4;
     padding: 40px;
-    width: 190px;
-    height: 302px;
+    
     
 }
 
@@ -371,3 +370,133 @@ body{
         line-height: 27px;
     }
 
+.standards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f8f4;
+    height: 260px;
+}
+
+#standards-text{
+    margin-bottom: 0;
+}
+
+.service-wrapper{
+    display: grid;
+    margin: 3px 3px 0px 3px;
+    grid-gap: 3px;
+    grid-template-areas: 
+    "service1 service2 service3 service4"
+}
+
+#service {
+    background-color: #f9f8f4;
+    
+    text-align: center;
+    padding: 40px;
+}
+.service1{
+    grid-area: service1
+}
+.service2{
+    grid-area: service2
+
+}
+.service3{
+    grid-area: service3
+
+}
+.service4{
+    grid-area: service4
+
+}
+
+.service-svg{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.service-title{
+    color: #2e3233;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+
+.service-text{
+    font-size: 16px;
+    line-height: 27px;
+    color: #5a5f61;
+
+}
+
+#blue{
+    background-color: #446a73;
+    padding: 40px;
+}
+
+.footer{
+    font-size: 16px;
+    width: 100%;
+    padding: 100px 0px;
+    display: grid;
+    background-color: #323333;
+    color: #727272;
+    grid-template-columns: 5% 30% 1% 20% 1% 15% 1% 15% 5%;
+    grid-template-areas: " ... footer1 ... footer2 ... footer3 ... footer4 ...";
+    line-height: 27px;
+}
+
+
+.footer-container1{
+    grid-area: footer1
+}
+.footer-container2{
+    grid-area: footer2
+}
+.footer-container3{
+    grid-area: footer3
+}
+
+.footer-container4{
+    grid-area: footer4
+}
+
+.footer-title{
+    height: 20vh;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+#footer-logo{
+    margin-bottom: 40px;
+}
+
+li{
+    margin-bottom: 10px;
+    list-style-type: disc;
+    cursor: pointer;
+}
+
+li:hover{
+    color: #c45d3c
+}
+
+.footer-text{
+    margin-bottom: 30px
+}
+
+a{
+    text-decoration: none;
+    color: #acc4ca;
+}
+a:visited{
+    color: #acc4ca ;
+}

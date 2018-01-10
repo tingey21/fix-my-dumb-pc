@@ -4,7 +4,8 @@
 <head>
     <link rel="stylesheet" href="/reset.css">
     <link rel="stylesheet" href="/Landing.css" />
-
+    <link rel="stylesheet" href="/pages/About.css">
+    <link rel="stylesheet" href="/pages/repair.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -45,12 +46,68 @@
         <div id="call-to-action"> <a href="#!/contact-us"> <button class="make-an-appointment">MAKE AN APPOINTMENT</button></a></div>
     </header>
     <div class=" navigation">
-        <div class = "home">Home</div>
-        <div class = "about">About</div>
-        <div class = "repair" >Repair Services</div>
-        <div class = "contact">Contact</div>
+            <a href="#!/" class = "home"><div >Home</div></a>
+            <a href="#!/about" class = "about"><div >About</div></a>
+            <a href="#!/repair" class = "repair"><div  >Repair Services</div></a>
+            <a href="#!/contact-us" class = "contact"><div >Contact</div></a>
     </div>
-    <div ng-view></div>
+    <div ng-view>
+
+    </div>
+
+
+    <div class = "footer">
+            <div class=" footer-container1" id = "footer-container">
+                <div id="icon">
+                    <div class="logo-wrapper" id = "footer-logo">
+                        <img class="logo" src="./assets/File png.png" alt="fix my dumb pc">
+                    </div>
+                </div>
+                <p class = "footer-text">We strive to help people by providing extraordinary service and expert repairs using only the highest quality parts available.
+        
+                </p>
+                <p class = "footer-text">We service all the newest and popular mobile phones, tablets and laptops. natis sed id nisl magna auris et neque sollicitudin ullamcorper fusce molestie felis mi id.Vestibulum venenatis sed id nisl magna suspendisse a mauris.
+        
+                </p>
+            </div>
+            <div  class = "footer-container2" id = "footer-container">
+                <h2 class = "footer-title">CONTACT US</h2>
+                <p class = "footer-text">
+                    136 Kingston Road SW19 1LY Wimbledon London.
+                </p>
+                <p>
+                    Monday - Friday: 9am - 6pm Saturday: 9am - 4pm
+                </p>
+                
+                <p class = "footer-text"> 
+                    Sunday: Appointments only.
+                </p>
+
+                <p >
+                    Office: (719)299-0811
+                </p>
+            </div >
+            <div class = "footer-container3" id = "footer-container">
+                <h2 class = "footer-title">Pages</h2>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Repair Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class = "footer-container4" id = "footer-container">
+                <h2 class = "footer-title">Repair Services</h2>
+                <ul>
+                    <li>Pc & Mac Computers</li>
+                    <li>Smartphone Repair</li>
+                    <li>Data Recovery</li>
+                    <li>Laptop Repair</li>
+                    <li>Tablet Repair</li>
+                </ul>
+            </div>
+        </div>
+
 </body>
 
 </html>

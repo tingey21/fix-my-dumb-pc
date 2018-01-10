@@ -10,12 +10,16 @@ myApp.config(function ($routeProvider, ) {
     
     .when('/about', {
         templateUrl: 'pages/About.html',
-        controller: 'secondController'
+        controller: 'mainController'
     })
     
     .when('/contact-us', {
         templateUrl: 'pages/ContactUS.html',
-        controller: 'secondController'
+        controller: 'mainController'
+    })
+    .when("/repair", {
+        templateUrl: 'pages/repair.html',
+        controller: 'mainController'
     })
     
 });
@@ -24,5 +28,18 @@ myApp.config(function ($routeProvider, ) {
 
 
 myApp.controller( "mainController", ["$scope", function($scope){
+    console.log($scope)
+    $scope.user = {
+        name: "", 
+        last: "Tingey"
+    }
+
+    $scope.go = function(){
+        $scope.user = {
+            name: "It",
+            last: "worked"
+        }
+    }
+
 
 }])
